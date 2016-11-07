@@ -1,0 +1,126 @@
+<style>
+ body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+</style>
+<style>
+.w3-lobster {
+    font-family: "Lobster", serif;
+} 
+</style>
+
+<!--navbar start-->
+
+<!--navbar end-->
+ <div class="w3-green w3-animate-right" id="tour">
+    <div class="w3-container w3-content w3-padding-64" style="margin-top:40px;max-width:800px;height:400px">
+        <div class="w3-content w3-section" style="max-width:500px">
+        </div>
+        <h2 class="w3-wide w3-center w3-lobster w3-text-white ">Happy Kideo</h2>
+        <p class="w3-opacity w3-text-white w3-center"><i>We love kids</i></p><br>
+    </div>
+ </div>
+<!-- Page content -->
+
+<div class="w3-content w3-animate-right" style="max-width:2000px;margin-top:46px">
+  <!-- The Band Section -->
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
+    <h2 class="w3-wide  w3-lobster w3-opacity">About Us</h2>
+    <p class="w3-opacity "><i>We love Kids</i></p>
+    <p class="w3-justify w3-opacity">Happy Kideo is a... consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+      ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
+      adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+       <h3 class="w3-border-bottom w3-border-light-grey w3-center w3-padding-12"></h3>
+       <br><br><br><br>
+        <h2 class="w3-wide  w3-lobster w3-opacity">Our Profile</h2>
+        <div class="w3-row w3-padding-32">
+          <div class="w3-third">
+            <div class="w3-card-4" style="width:80%;height:50%">
+              <img routerLink="/kidsprof" src="https://s-media-cache-ak0.pinimg.com/236x/5d/39/43/5d3943ef25d19ea528facf629a394148.jpg" alt="Norway" style="width:100%">
+                <div class="w3-container w3-opacity w3-center">
+                  <p>Kids Profile</p>
+                </div>
+            </div>
+          </div>  
+
+          <div class="w3-third">
+              <div class="w3-card-4" style="width:80%;height:50%">
+               <img routerLink="/workers" src="https://s-media-cache-ak0.pinimg.com/236x/5d/39/43/5d3943ef25d19ea528facf629a394148.jpg" alt="Norway" style="width:100%">
+                <div class="w3-container w3-opacity w3-center">
+                  <p>Our Workers</p>
+                </div>
+              </div>
+          </div>
+
+          <div class="w3-third">
+                <div routerLink="/admin" class="w3-card-4" style="width:80%">
+                  <img src="https://s-media-cache-ak0.pinimg.com/236x/5d/39/43/5d3943ef25d19ea528facf629a394148.jpg" alt="Norway" style="width:100%">
+                  <div class="w3-container w3-opacity w3-center">
+                  <p>Admin</p>
+                </div>
+              </div>
+           </div>
+         </div>
+        <h3 class="w3-border-bottom w3-border-light-grey w3-center w3-padding-12"></h3>
+      </div>
+  </div>
+      
+  <!-- start here-->
+
+  <div id="ticketModal" class="w3-modal">
+    <div class="w3-modal-content w3-animate-top w3-card-8">
+        <header class="w3-container w3-teal w3-center w3-padding-32">
+          <span onclick="document.getElementById('ticketModal').style.display='none'"
+            class="w3-closebtn w3-padding-xlarge w3-xxlarge w3-display-topright">×</span>
+              <h2 class="w3-wide"><i class="fa fa-suitcase w3-margin-right"></i>Tickets</h2>
+        </header>
+
+      <div class="w3-container">
+          <p><label><i class="fa fa-shopping-cart"></i> Tickets, $15 per person</label></p>
+          <input class="w3-input w3-border" type="text" placeholder="How many?">
+          <p><label><i class="fa fa-user"></i> Send To</label></p>
+          <input class="w3-input w3-border" type="text" placeholder="Enter email">
+          <button class="w3-btn-block w3-teal w3-padding-12 w3-section w3-right">PAY <i class="fa fa-check"></i></button>
+          <button class="w3-btn w3-red w3-section" onclick="document.getElementById('ticketModal').style.display='none'">Close <i class="fa fa-remove"></i></button>
+          <p class="w3-right">Need <a class="w3-text-blue">help?</a></p>
+      </div>
+    </div>
+  </div>
+
+  <!--end here -->
+
+    <!-- The Contact Section -->
+  <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
+    <h2 class="w3-wide w3-center w3-lobster w3-opacity">CONTACT</h2>
+    <p class="w3-opacity w3-center"><i>say hi to us..</i></p>
+    <div class="w3-row w3-padding-32">
+
+      <div class="w3-col m6 w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker" style="width:30px"></i> Ekangala, Day Care<br>
+        <i class="fa fa-phone" style="width:30px"></i> Phone: +00 151515<br>
+        <i class="fa fa-envelope" style="width:30px"> </i> Email: mail@mail.com<br>
+      </div>
+
+      <div class="w3-col m6">
+        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Name">
+          </div>
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Email">
+          </div>
+        </div>
+        <input class="w3-input w3-border" type="text" placeholder="Comment">
+        <button class="w3-btn w3-section w3-right">SEND</button>
+      </div>
+    </div>
+  </div>
+  <!-- Footer -->
+
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+  <a  class="w3-hover-text-indigo"><i class="fa fa-facebook-official"></i></a>
+  <a  class="w3-hover-text-indigo"><i class="fa fa-linkedin"></i></a>
+  <!--<p class="w3-medium">Contact Developer <a href="https://gitforlio.firebaseapp.com/" target="_blank">Muzi Jacky</a></p>-->
+</footer>
+
+
+

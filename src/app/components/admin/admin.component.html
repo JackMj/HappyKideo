@@ -1,0 +1,23 @@
+<style>
+ body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+</style>
+<style>
+.w3-lobster {
+    font-family: "Lobster", serif;
+} 
+</style>
+
+<div class="w3-container w3-animate-right">
+  <h2>Basic List</h2>
+   <h2 class="w3-wide w3-center w3-lobster w3-opacity">Our Admin</h2>
+    <p class="w3-opacity w3-center"><i>List of All Our Admin</i></p>
+    <h3 class="w3-border-bottom w3-border-light-grey w3-center w3-padding-12"></h3>
+
+<div class="w3-container">
+  <ul *ngFor="let id of getKeys()"  class="w3-ul w3-card-4 w3-hoverable">
+    <li>{{tasks[id].name}}</li>
+  </ul>
+</div>
+
+</div>

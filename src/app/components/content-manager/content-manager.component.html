@@ -1,0 +1,195 @@
+<style>
+ body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+</style>
+<style>
+.w3-lobster {
+    font-family: "Lobster", serif;
+} 
+</style>
+
+<div class="w3-container w3-animate-right">
+  <h2>Basic List</h2>
+   <h2 class="w3-wide w3-center w3-lobster w3-opacity">Happy Kideo</h2>
+    <h3 class="w3-border-bottom w3-border-light-grey w3-center w3-padding-12"></h3>
+
+  <div class="w3-content w3-animate-right" style="max-width:2000px;margin-top:46px">
+    <!-- The Band Section -->
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
+      <h2 class="w3-wide  w3-lobster w3-opacity">Our Profile</h2>
+        <p class="w3-opacity w3-center"><i>Add Kids,Workers and Admin</i></p>
+        <div class="w3-row w3-padding-32">
+          <div class="w3-third">
+            <div class="w3-card-4" style="width:80%;height:50%">
+              <img class="w3-hover-opacity" w3-hover-opacity onclick="document.getElementById('id01').style.display='block'" src="https://s-media-cache-ak0.pinimg.com/236x/5d/39/43/5d3943ef25d19ea528facf629a394148.jpg" alt="Norway" style="width:100%">
+                <div class="w3-container w3-opacity  w3-center">
+                 <ul class="w3-ul w3-hoverable">
+                  <li onclick="document.getElementById('id01').style.display='block'">Add Kids</li>
+                   <li>View Kids</li>
+                 </ul>
+                </div>
+            </div>
+          </div>  
+ 
+          <div class="w3-third">
+              <div class="w3-card-4" style="width:80%;height:50%">
+               <img class="w3-hover-opacity" onclick="document.getElementById('id02').style.display='block'" src="https://s-media-cache-ak0.pinimg.com/236x/5d/39/43/5d3943ef25d19ea528facf629a394148.jpg" alt="Norway" style="width:100%">
+                <div class="w3-container w3-opacity  w3-center">
+                  <ul class="w3-ul w3-hoverable">
+                    <li onclick="document.getElementById('id01').style.display='block'">Add Workers</li>
+                    <li>View Workers</li>
+                  </ul>
+                </div>
+              </div>
+          </div>
+          <div class="w3-third">
+                <div onclick="document.getElementById('id03').style.display='block'" class="w3-card-4" style="width:80%">
+                  <img class="w3-hover-opacity" src="https://s-media-cache-ak0.pinimg.com/236x/5d/39/43/5d3943ef25d19ea528facf629a394148.jpg" alt="Norway" style="width:100%">
+                  <div class="w3-container w3-opacity  w3-center">
+                    <ul class="w3-ul w3-hoverable">
+                      <li onclick="document.getElementById('id01').style.display='block'">Add Admin</li>
+                      <li>View Admin</li>
+                    </ul>
+                </div>
+              </div>
+           </div>
+         </div>
+         <div id="id01" class="w3-modal w3-animate-zoom">
+          <div class="w3-modal-content">
+            <div class="w3-container">
+              <span onclick="document.getElementById('id01').style.display='none'" 
+              class="w3-closebtn">&times;</span>
+              <div class="w3-container w3-green">
+              <h2>Child info</h2>
+            </div>
+
+            <div class="w3-container">
+              <p>
+              <label>First name</label>
+              <input [(ngModel)]="fname"  class="w3-input" type="text"></p>
+              <p>
+              <label>Last Name</label>
+              <input [(ngModel)]="lname"  class="w3-input" type="text"></p>
+              <p>
+              <label>Date of birth</label>
+              <input [(ngModel)]="dob" class="w3-input" type="text"></p>
+              <p>
+              <label>Gender</label>
+              <input [(ngModel)]="gender" class="w3-input" type="text"></p>
+              <p>
+              <label>Date of Admission</label>
+              <input [(ngModel)]="doa" class="w3-input" type="text"></p>
+               <p>
+              <label>Education Move</label>
+              <input [(ngModel)]="edmove" class="w3-input" type="text"></p>
+               <p>
+              <label>Reason for Leaving</label>
+              <input [(ngModel)]="rleave" class="w3-input" type="text"></p>
+               <p>
+              <label>Date of Leaving</label>
+              <input [(ngModel)]="dleave" class="w3-input" type="text"></p>
+               <p>
+              <label>Profile</label>
+              <input [(ngModel)]="profile" class="w3-input" type="text"></p>
+              <button routerLink="/kidsprof" onclick="document.getElementById('id02').style.display='none'"  (click)="saveChild()" class="w3-btn">Save</button><br>
+            </div>
+             <br>
+            </div>
+          </div>
+        </div>
+
+        <div id="id02" class="w3-modal w3-animate-zoom">
+          <div class="w3-modal-content">
+            <div class="w3-container">
+              <span onclick="document.getElementById('id02').style.display='none'" 
+              class="w3-closebtn">&times;</span>
+              <div class="w3-container w3-green">
+              <h2>Workers info</h2>
+            </div>
+             <br>
+
+            <div class="w3-container">
+              <p>
+              <label>First name</label>
+              <input [(ngModel)]="fname"  class="w3-input" type="text"></p>
+              <p>
+              <label>Last Name</label>
+              <input [(ngModel)]="lname" class="w3-input" type="text"></p>
+              <p>
+              <label>ID Number</label>
+              <input [(ngModel)]="idno" class="w3-input" type="text"></p>
+              <p>
+              <label>Cell Phone number</label>
+              <input [(ngModel)]="pnumber" class="w3-input" type="text"></p>
+              <p>
+              <label>Gender</label>
+              <input [(ngModel)]="gender" class="w3-input" type="text"></p>
+              <p>
+              <label>Date of Employment</label>
+              <input [(ngModel)]="doe" class="w3-input" type="text"></p>
+               <p>
+              <label>Date of Resignation </label>
+              <input [(ngModel)]="dor" class="w3-input" type="text"></p>
+              <p>
+              <label>Profile</label>
+              <input [(ngModel)]="profile" class="w3-input" type="text"></p>
+               <p>
+              <label>Address</label>
+              <input [(ngModel)]="address" class="w3-input" type="text"></p>
+              <button routerLink="/workers" class="w3-btn" onclick="document.getElementById('id02').style.display='none'" (click)="saveWorker()">Save</button><br>
+            </div>
+             <br>
+            </div>
+          </div>
+        </div>
+
+              <div id="id03" class="w3-modal w3-animate-zoom">
+          <div class="w3-modal-content">
+            <div class="w3-container">
+              <span onclick="document.getElementById('id03').style.display='none'" 
+              class="w3-closebtn">&times;</span>
+              <div class="w3-container w3-green">
+              <h2>Admin info</h2>
+            </div>
+
+            <form class="w3-container">
+              <p>
+              <label>First name</label>
+              <input class="w3-input" type="text"></p>
+              <p>
+              <label>Last Name</label>
+              <input class="w3-input" type="text"></p>
+              <p>
+              <label>ID Number</label>
+              <input class="w3-input" type="text"></p>
+              <p>
+              <label>Cell Phone number</label>
+              <input class="w3-input" type="text"></p>
+              <p>
+              <label>Gender</label>
+              <input class="w3-input" type="text"></p>
+              <p>
+              <label>Date of Employment</label>
+              <input class="w3-input" type="text"></p>
+               <p>
+              <label>Date of Resignation </label>
+              <input class="w3-input" type="text"></p>
+              <p>
+              <label>Profile</label>
+              <input class="w3-input" type="text"></p>
+               <p>
+              <label>Address</label>
+              <input class="w3-input" type="text"></p>
+               <p>
+              <label>Profile</label>
+              <input class="w3-input" type="text"></p>
+              <button routerLink="/admin"  onclick="document.getElementById('id02').style.display='none'"  class="w3-btn">Save</button><br>
+            </form>
+             <br>
+            </div>
+          </div>
+        </div>
+        <h3 class="w3-border-bottom w3-border-light-grey w3-center w3-padding-12"></h3>
+      </div>
+  </div>
+</div>
